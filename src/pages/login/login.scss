@@ -1,0 +1,22 @@
+page-login {
+    .background {
+        
+        background-image: url('../assets/pict/Login.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .login_button_masuk {
+        margin-top: 5vh;
+        height: 20vw !important;
+        width: 100%;
+        align-items: center;
+        
+    }
+    .login_button_kelas {
+        margin-top: 60vh;
+        height: 20vw !important;
+        width: 100%;
+        align-items: center;
+        
+    }
+}

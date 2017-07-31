@@ -1,0 +1,11 @@
+
+<ion-content padding  class="background">
+  <button class='login_button_kelas' ion-button outline round block color="Login" (click)="doRadio()">
+    <div *ngIf="!kelas"><font size="5" text-wrap>Pilih Kelas</font></div>
+		<div *ngIf="kelas"><font size="5" text-wrap>Kelas {{kelas}} SD</font></div>
+	</button>
+  <button class='login_button_masuk' ion-button  round block color="Login" (click)="gotoHome()">
+		  			<font size="5" text-wrap>MASUk</font>
+	</button>
+
+</ion-content>
