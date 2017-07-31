@@ -7,12 +7,17 @@
 <ion-header>
 
   <ion-navbar color="KumpulanBuku">
-    <ion-title>KumpulanBuku</ion-title>
+    <ion-title>Kumpulan Buku</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-item>
+    <img src="assets/pict/BukuSaku.png" (tap)="gotoBukuSaku()" style='height: 60vw; width: 75vw; display: block; margin: auto;'>
+  </ion-item>
+  <ion-item no-lines>
+    <img src="assets/pict/BukuLain.png" (tap)="gotoBukuLain()" style='height: 60vw; width: 75vw; display: block; margin: auto;'>
+  </ion-item>
 </ion-content>
