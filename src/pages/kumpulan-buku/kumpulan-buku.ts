@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { KumpulanBukuSakuPage } from '../kumpulan-buku-saku/kumpulan-buku-saku';
+import { KumpulanBukuLainPage } from '../kumpulan-buku-lain/kumpulan-buku-lain';
 
 /**
  * Generated class for the KumpulanBukuPage page.
@@ -20,6 +22,14 @@ export class KumpulanBukuPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad KumpulanBukuPage');
+  }
+
+  gotoBukuSaku(){
+    this.navCtrl.push(KumpulanBukuSakuPage);
+  }
+
+  gotoBukuLain(){
+    this.navCtrl.push(KumpulanBukuLainPage);
   }
 
 }

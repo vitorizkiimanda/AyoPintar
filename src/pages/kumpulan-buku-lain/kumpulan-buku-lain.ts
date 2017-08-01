@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { CerdasCermatSoalPage } from '../cerdas-cermat-soal/cerdas-cermat-soal';
 
 /**
- * Generated class for the CerdasCermatPage page.
+ * Generated class for the KumpulanBukuLainPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -11,21 +10,16 @@ import { CerdasCermatSoalPage } from '../cerdas-cermat-soal/cerdas-cermat-soal';
 
 @IonicPage()
 @Component({
-  selector: 'page-cerdas-cermat',
-  templateUrl: 'cerdas-cermat.html',
+  selector: 'page-kumpulan-buku-lain',
+  templateUrl: 'kumpulan-buku-lain.html',
 })
-export class CerdasCermatPage {
+export class KumpulanBukuLainPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CerdasCermatPage');
+    console.log('ionViewDidLoad KumpulanBukuLainPage');
   }
-
-  gotoCerdasCermatSoal(){
-    this.navCtrl.push(CerdasCermatSoalPage);
-  }
-
 
 }

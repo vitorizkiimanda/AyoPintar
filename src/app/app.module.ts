@@ -10,7 +10,10 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CariJawabanPage } from '../pages/cari-jawaban/cari-jawaban';
 import { CerdasCermatPage } from '../pages/cerdas-cermat/cerdas-cermat';
+import { CerdasCermatSoalPage } from '../pages/cerdas-cermat-soal/cerdas-cermat-soal';
 import { KumpulanBukuPage } from '../pages/kumpulan-buku/kumpulan-buku';
+import { KumpulanBukuSakuPage } from '../pages/kumpulan-buku-saku/kumpulan-buku-saku';
+import { KumpulanBukuLainPage } from '../pages/kumpulan-buku-lain/kumpulan-buku-lain';
 import { KunciPintarPage } from '../pages/kunci-pintar/kunci-pintar';
 import { LatihanSoalPage } from '../pages/latihan-soal/latihan-soal';
 import { ShslPage } from '../pages/shsl/shsl';
@@ -23,7 +26,10 @@ import { LoginPage } from '../pages/login/login';
     HomePage,
     CariJawabanPage, 
     CerdasCermatPage,
+    CerdasCermatSoalPage,
     KumpulanBukuPage,
+    KumpulanBukuSakuPage,
+    KumpulanBukuLainPage,
     KunciPintarPage, 
     LatihanSoalPage,
     LoginPage,
@@ -39,7 +45,10 @@ import { LoginPage } from '../pages/login/login';
     HomePage,
     CariJawabanPage, 
     CerdasCermatPage,
+    CerdasCermatSoalPage,
     KumpulanBukuPage,
+    KumpulanBukuSakuPage,
+    KumpulanBukuLainPage,
     KunciPintarPage, 
     LatihanSoalPage,
     LoginPage,
