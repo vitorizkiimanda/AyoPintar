@@ -6,11 +6,17 @@ page-home {
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .icon {
+    .pad-top {
         margin-top: 25vh;
+        background-color: transparent;
     }
-    .icon-sub{
-        padding-top: 15px;
+    .transparent {
+        background-color: transparent;
+    }
+    .icon{
+        font-size: 30px;
+        color : white;
+        align-content: right;
     }
 
 }

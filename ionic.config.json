@@ -1,5 +1,6 @@
 {
   "name": "AyoPintar",
-  "app_id": "8d26114b",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {},
+  "app_id": "77f2699d"
 }

@@ -1,7 +1,7 @@
 
 
-<ion-content class="background" >
-  <ion-grid class="icon"  >
+<ion-content class="background" padding >
+  <!--<ion-grid class="icon"  >
   <ion-row class="icon-sub">
     <ion-col col-6><img src="assets/pict/CariJawaban.png" (tap)="gotoCariJawaban()" style='height: 33vw; width: 27vw; display: block; margin: auto;'></ion-col>
     <ion-col col-6><img src="assets/pict/KunciPintar.png" (tap)="gotoKunciPintar()" style='height: 33vw; width: 27vw; display: block; margin: auto;'></ion-col>  
@@ -16,7 +16,46 @@
   </ion-row>
 
   
-  </ion-grid> 
-
+  </ion-grid> -->
+    <ion-fab top right >
+      <button color="dark" ion-fab mini (click)='gotoHelp()'>
+          <ion-icon class="icon" name="md-help" ></ion-icon>
+        </button>
+    </ion-fab>
+    <!--<ion-item no-lines class="transparent" text-right>
+    <ion-icon name="ios-help-circle-outline" class="icon"></ion-icon>
+    </ion-item>-->
+    <ion-item text-center no-lines class="pad-top"><font size="5">Tingkat Kesulitan</font></ion-item>
+    <ion-item no-lines text-center>
+      <div [hidden]="KodeSoal!=1"><p><font size="4">3 + 8 = ?</font></p></div>
+      <div [hidden]="KodeSoal!=2"><p><font size="4">23 + 7 = ?</font></p></div>
+      <div [hidden]="KodeSoal!=3"><p><font size="4">43 + 24 = ?</font></p></div>
+      <div [hidden]="KodeSoal!=4"><p><font size="4">3 x 8 = ?</font></p></div>
+      <div [hidden]="KodeSoal!=5"><p><font size="4">12 x 4 = ?</font></p></div>
+      <div [hidden]="KodeSoal!=6"><p><font size="4">2 x 3 + 8 = ?</font></p></div>
+      <div [hidden]="KodeSoal!=7"><p><font size="4">4 x 23 + 18 = ?</font></p></div>
+    </ion-item>
+    <ion-item no-lines class="transparent">
+      <ion-range min="1" max="7" step="1" snaps="true" [(ngModel)]="KodeSoal" color="ijo">
+      </ion-range>
+    </ion-item>
+    <ion-grid >
+        <ion-row>
+          <ion-col col-6><font size="4">Mudah</font></ion-col>
+          <ion-col text-right col-6><font size="4">Sulit</font></ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-item></ion-item>
+    <ion-item text-center no-lines padding-top><font size="5">Jumlah Soal</font></ion-item>
+    <ion-grid >
+        <ion-row>
+          <ion-col text-right ><button ion-button (click)="kurang()" small color="ijo">-</button></ion-col>
+          <ion-col text-center><button ion-button clear color="grey"><p><font size="3">{{JumlahSoal}} soal</font></p></button></ion-col>
+          <ion-col><button ion-button (click)="tambah()" small color="ijo">+</button></ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-item no-lines></ion-item>
+    <button ion-button block color="ijo">Pasang</button>
+  
 
 </ion-content>

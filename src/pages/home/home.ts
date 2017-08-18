@@ -1,11 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController,AlertController } from 'ionic-angular';
-import { CariJawabanPage } from '../cari-jawaban/cari-jawaban';
-import { CerdasCermatPage } from '../cerdas-cermat/cerdas-cermat';
-import { KumpulanBukuPage } from '../kumpulan-buku/kumpulan-buku';
-import { KunciPintarPage } from '../kunci-pintar/kunci-pintar';
-import { LatihanSoalPage } from '../latihan-soal/latihan-soal';
-import { ShslPage } from '../shsl/shsl';
+
 
 @Component({
   selector: 'page-home',
@@ -13,6 +8,9 @@ import { ShslPage } from '../shsl/shsl';
 })
 export class HomePage {
 
+  JumlahSoal = 1;
+  private KodeSoal = 1;
+  
   constructor(
     public navCtrl: NavController,
     public alertCtrl: AlertController
@@ -20,33 +18,17 @@ export class HomePage {
 
   }
 
-  gotoCariJawaban(){
-    let alert = this.alertCtrl.create({
-      title: '',
-      subTitle: 'Coming Soon.',
-      buttons: ['OK']
-    });
-    alert.present();
+  tambah(){
+    if(this.JumlahSoal<5)
+    {
+      this.JumlahSoal++
+    }
   }
-
-  gotoKunciPintar(){
-    this.navCtrl.push(KunciPintarPage);
-  }
-
-  gotoLatihanSoal(){
-    this.navCtrl.push(LatihanSoalPage);
-  }
-
-  gotoSHSL(){
-    this.navCtrl.push(ShslPage);
-  }
-
-  gotoCerdasCermat(){
-    this.navCtrl.push(CerdasCermatPage);
-  }
-
-  gotoKumpulanBuku(){
-    this.navCtrl.push(KumpulanBukuPage);
+  kurang(){
+    if(this.JumlahSoal>1)
+    {
+      this.JumlahSoal--
+    }
   }
 
 }
