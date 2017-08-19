@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController,AlertController } from 'ionic-angular';
+import { HelpPage } from '../help/help';
 
 
 @Component({
@@ -29,6 +30,10 @@ export class HomePage {
     {
       this.JumlahSoal--
     }
+  }
+
+  gotoHelp(){
+    this.navCtrl.push(HelpPage);
   }
 
 }
