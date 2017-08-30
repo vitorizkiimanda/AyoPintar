@@ -10,6 +10,9 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { HelpPage } from '../pages/help/help';
 
+import { LocalNotifications } from '@ionic-native/local-notifications';
+import { Dialogs } from '@ionic-native/dialogs';
+// import { BackgroundMode } from '@ionic-native/background-mode';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { HelpPage } from '../pages/help/help';
   ],
   providers: [
     StatusBar,
+    // BackgroundMode,
+    Dialogs,
+    LocalNotifications,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]

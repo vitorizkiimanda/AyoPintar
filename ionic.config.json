@@ -1,6 +1,8 @@
 {
   "name": "AyoPintar",
   "type": "ionic-angular",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "app_id": "77f2699d"
 }
