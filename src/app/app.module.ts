@@ -12,7 +12,8 @@ import { HelpPage } from '../pages/help/help';
 
 import { LocalNotifications } from '@ionic-native/local-notifications';
 import { Dialogs } from '@ionic-native/dialogs';
-// import { BackgroundMode } from '@ionic-native/background-mode';
+import { BackgroundMode } from '@ionic-native/background-mode';
+import { Autostart } from '@ionic-native/autostart';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { Dialogs } from '@ionic-native/dialogs';
   ],
   providers: [
     StatusBar,
-    // BackgroundMode,
+    BackgroundMode,
+    Autostart,
     Dialogs,
     LocalNotifications,
     SplashScreen,
