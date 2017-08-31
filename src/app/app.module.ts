@@ -15,6 +15,8 @@ import { Dialogs } from '@ionic-native/dialogs';
 import { BackgroundMode } from '@ionic-native/background-mode';
 import { Autostart } from '@ionic-native/autostart';
 import { AndroidFullScreen } from '@ionic-native/android-full-screen';
+import { Vibration } from '@ionic-native/vibration';
+import { NativeAudio } from '@ionic-native/native-audio';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { AndroidFullScreen } from '@ionic-native/android-full-screen';
   providers: [
     StatusBar,
     BackgroundMode,
+    Vibration,
     Autostart,
+    NativeAudio,
     AndroidFullScreen,
     Dialogs,
     LocalNotifications,

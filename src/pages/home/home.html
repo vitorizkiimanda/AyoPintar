@@ -22,9 +22,9 @@
           <ion-icon class="icon" name="md-help" ></ion-icon>
         </button>
     </ion-fab>
-    <ion-fab top left >
+    <!--<ion-fab top left >
       <ion-toggle color="ijoTua" [(ngModel)]="toggleStatus"  checked="false" (ionChange)="Change_Toggle()"></ion-toggle>
-    </ion-fab>
+    </ion-fab>-->
     <!--<ion-item no-lines class="transparent" text-right>
     <ion-icon name="ios-help-circle-outline" class="icon"></ion-icon>
     </ion-item>-->
@@ -48,17 +48,19 @@
           <ion-col text-right col-6><font size="4">Sulit</font></ion-col>
         </ion-row>
     </ion-grid>
-    <ion-item></ion-item>
-    <ion-item text-center no-lines padding-top><font size="5">Jumlah Soal</font></ion-item>
-    <ion-grid >
+    <!--<ion-item></ion-item>-->
+    <!--<ion-item text-center no-lines padding-top><font size="5">Jumlah Soal</font></ion-item>-->
+    <!--<ion-grid >
         <ion-row>
           <ion-col text-right ><button ion-button (click)="kurang()" small color="ijo">-</button></ion-col>
           <ion-col text-center><button ion-button clear color="grey"><p><font size="3">{{JumlahSoal}} soal</font></p></button></ion-col>
           <ion-col><button ion-button (click)="tambah()" small color="ijo">+</button></ion-col>
         </ion-row>
     </ion-grid>
-    <ion-item no-lines></ion-item>
-    <button ion-button block color="ijo" (click)="rollDice()">Pasang</button>
+    <ion-item no-lines></ion-item>-->
+    <!--<button ion-button block color="ijo" (click)="rollDice()">Pasang</button>-->
+  
+    <button ion-button class="Button" block color="ijo" (click)="latihan()"><p class="ButtonWord">Berlatih</p></button>
   
 
 </ion-content>
