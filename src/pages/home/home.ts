@@ -5,7 +5,7 @@ import { HelpPage } from '../help/help';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 import { Dialogs } from '@ionic-native/dialogs';
 import { BackgroundMode } from '@ionic-native/background-mode';
-
+import { AndroidFullScreen } from '@ionic-native/android-full-screen';
 
 @Component({
   selector: 'page-home',
@@ -21,13 +21,14 @@ export class HomePage {
   soal: string
   
   
-  toggleStatus = true;
+  toggleStatus = false;
   JumlahSoal = 1;
   private KodeSoal = 1;
   
   constructor(
     private localNotifications: LocalNotifications,
 
+    private androidFullScreen: AndroidFullScreen,
     public navCtrl: NavController,
     private backgroundMode: BackgroundMode,
     private dialogs: Dialogs,
@@ -59,12 +60,14 @@ export class HomePage {
 
   Change_Toggle() {
 
+
     // nnti dikasih password gitu
   
+
+  // 
   if(this.toggleStatus == true){
 
-    this.backgroundMode.enable();
-          
+    this.backgroundMode.enable();        
    }
    else{
      this.backgroundMode.disable();  
@@ -141,6 +144,10 @@ export class HomePage {
 
   notif() {
 
+    this.androidFullScreen.showUnderSystemUI()
+    // this.androidFullScreen.isImmersiveModeSupported()
+    .then(() => this.androidFullScreen.immersiveMode())
+    .catch((error: any) => console.log(error));
 
     this.random();
 
@@ -167,14 +174,7 @@ export class HomePage {
         var i = 0
         var roll_int = setInterval(() => {
 
-          this.dialogs.prompt('Soal persamaan matematika dasar', 'Soal 1', ['Jawab','Jawab'], 'Tulis Jawaban')
-
-          .then(function(result) {
-            var input = result.input1;
-            // no button = 0, 'OK' = 1, 'Cancel' = 2
-            var btnIndex = result.buttonIndex;
-          });
-
+          this.notif();
         }, 10000);
 
         

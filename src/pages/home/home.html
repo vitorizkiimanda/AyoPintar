@@ -39,7 +39,7 @@
       <div [hidden]="KodeSoal!=7"><p><font size="4">4 x 23 + 18 = ?</font></p></div>
     </ion-item>
     <ion-item no-lines class="transparent">
-      <ion-range min="1" max="7" step="1" snaps="true" [(ngModel)]="KodeSoal" color="ijo">
+      <ion-range min="1" max="7" step="1" snaps="true" [(ngModel)]="KodeSoal" color="ijo" (ionChange)="Change_Soal()">
       </ion-range>
     </ion-item>
     <ion-grid >
@@ -58,7 +58,7 @@
         </ion-row>
     </ion-grid>
     <ion-item no-lines></ion-item>
-    <button ion-button block color="ijo" (click)="notif()">Pasang</button>
+    <button ion-button block color="ijo" (click)="rollDice()">Pasang</button>
   
 
 </ion-content>

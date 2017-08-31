@@ -14,6 +14,7 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
 import { Dialogs } from '@ionic-native/dialogs';
 import { BackgroundMode } from '@ionic-native/background-mode';
 import { Autostart } from '@ionic-native/autostart';
+import { AndroidFullScreen } from '@ionic-native/android-full-screen';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { Autostart } from '@ionic-native/autostart';
     StatusBar,
     BackgroundMode,
     Autostart,
+    AndroidFullScreen,
     Dialogs,
     LocalNotifications,
     SplashScreen,
